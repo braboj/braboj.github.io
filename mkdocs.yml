@@ -1,0 +1,19 @@
+site_name: Python by Example
+repo_url: https://braboj.github.io
+site_dir: site
+docs_dir: docs
+
+theme:
+  name: readthedocs
+  collapse_navigation: true
+
+plugins:
+  - search
+  - awesome-pages
+
+nav:
+   - About: about.md
+   - Projects: projects.md
+   - Tutorials: tutorials.md
+   - Publications: publications.md
+   - Contact: contact.md

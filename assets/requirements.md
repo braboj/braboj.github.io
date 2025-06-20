@@ -1,7 +1,6 @@
 ### This site will have the following parts:
 
 - Link to Home
-- Link to Portfolio
 - Link to Tutorials
 - Link to Courses
 - Link to About
@@ -26,5 +25,3 @@
 - Linkedin
 - Medium
 - ...
-
-
