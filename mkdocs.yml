@@ -18,9 +18,10 @@ theme:
     - python
 
 nav:
+   - Home: index.md
    - About: about.md
-   - Demos: demos/
-   - Projects: projects.md
-   - Tutorials: tutorials.md
-   - Publications: publications.md
+   - Projects: projects/
+   - Tutorials: tutorials/
+   - Publications: publications/
+   - Samples: samples/
    - Contact: contact.md
