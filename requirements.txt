@@ -1,2 +1,4 @@
 mkdocs
 mkdocs-awesome-pages-plugin
+mkdocs-pymdownx-material-extras
+mkdocs-callouts

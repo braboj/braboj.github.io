@@ -26,7 +26,6 @@ jobs:
         with:
           python-version: 3.12
       - run: pip install -r requirements.txt
-      - run: python ./.scripts/gen_markdown_chapters.py
       - run: cp README.md docs/index.md
       - run: cp LICENSE docs/license.md
       - run: cp CONTRIBUTE.md docs/contribute.md
