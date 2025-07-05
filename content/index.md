@@ -9,7 +9,6 @@ with Siemens and Honeywell technologies. Over time, I transitioned into
 software development — where I now specialize in Python, data analysis, 
 network protocol testing, and agile software delivery.
 
----
 
 ## 🧰 Core Skills
 
@@ -19,7 +18,6 @@ network protocol testing, and agile software delivery.
 - **Testing & QA** – Pytest, Scapy, Jenkins, GitHub CI, Docker
 - **Methodologies** – Agile, SAFe 6 Practitioner, mentoring & documentation
 
----
 
 ## 🏆 Key Highlights
 
@@ -29,7 +27,6 @@ network protocol testing, and agile software delivery.
 - Led agile teams and mentored new engineers in development best practices.
 - Co-authored multiple peer-reviewed publications in control engineering.
 
----
 
 ## 📄 Publications
 
@@ -42,7 +39,6 @@ network protocol testing, and agile software delivery.
 - **"Optimization of Parallel Distributed Compensation for Real-Time Control of Level in Carbonization Column"**  
   *Automatic Control and Computer Sciences, Vol. 54, pp. 379–390*
 
----
 
 ## 🔗 Explore My Work
 
