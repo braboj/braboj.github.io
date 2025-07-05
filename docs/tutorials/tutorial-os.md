@@ -1,9 +1,0 @@
-- Tutorial Python
-- Tutorial Typescript
-- Tutorial Dart
-- Tutorial Testing
-- Tutorial Docker
-- Tutorial Networking
-- Tutorial Operating Systems
-- Tutorial Microprocessor
-- Tutorial Git
