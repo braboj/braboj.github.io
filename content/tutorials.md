@@ -7,7 +7,7 @@ Explore hands-on tutorials I've created to support learning in key technical are
 A beginner-friendly guide to Git—covering fundamental commands, workflows, 
 and best practices.
 
-## [Python by Example](https://github.com/braboj/tutorial-python)  
+## [Python by Example](https://codewithbranko.com/tutorial-python/)  
 
 Code examples and explanations designed to help you learn Python through 
 real-world snippets and use cases.
