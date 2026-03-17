@@ -3,18 +3,21 @@
     "title": "Design and industrial implementation of fuzzy logic control of level in soda production",
     "journal": "Engineering Science and Technology, an International Journal",
     "authors": "Snejana Yordanova, Milen Slavov, Branimir Georgiev",
-    "ref": "Vol 23, Issue 3, pages 691–699"
+    "ref": "Vol 23, Issue 3, pages 691–699",
+    "doi": "https://doi.org/10.1016/j.jestch.2019.08.005"
   },
   {
     "title": "Parallel distributed compensation for improvement of level control in carbonization column for soda production",
     "journal": "Control Engineering Practice",
     "authors": "Snejana Yordanova, Milen Slavov, Branimir Georgiev",
-    "ref": "Vol 71, pages 53–60"
+    "ref": "Vol 71, pages 53–60",
+    "doi": "https://doi.org/10.1016/j.conengprac.2017.10.003"
   },
   {
     "title": "Optimization of Parallel Distributed Compensation for Real Time Control of Level in Carbonization Column",
     "journal": "Automatic Control and Computer Sciences",
     "authors": "Snejana Yordanova, Milen Slavov, Branimir Georgiev",
-    "ref": "Vol 54, pages 379–390"
+    "ref": "Vol 54, pages 379–390",
+    "doi": "https://doi.org/10.3103/S0146411620050107"
   }
 ]

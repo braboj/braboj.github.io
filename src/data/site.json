@@ -8,7 +8,7 @@
     { "label": "Skills",       "href": "#skills" },
     { "label": "Projects",     "href": "#projects" },
     { "label": "Publications", "href": "#publications" },
-    { "label": "Get in Touch", "href": "#contact", "cta": true }
+    { "label": "Get in Touch", "href": "#contact" }
   ],
   "contact": {
     "email": "contact@imbra.io",

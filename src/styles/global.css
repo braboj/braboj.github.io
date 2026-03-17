@@ -222,20 +222,6 @@ code {
   text-decoration: none;
 }
 
-.nav-links a.nav-cta {
-  color: #fff;
-  background: var(--color-accent);
-  border: 1px solid var(--color-accent);
-  padding: 6px 14px;
-  border-radius: var(--radius);
-  transition: background var(--transition), color var(--transition);
-}
-
-.nav-links a.nav-cta:hover {
-  background: var(--color-accent-hover);
-  border-color: var(--color-accent-hover);
-  color: #fff;
-}
 
 /* =========================================================
    Hero
@@ -667,6 +653,18 @@ code {
   line-height: 1.5;
   color: var(--color-text);
   margin-bottom: 4px;
+}
+
+.publication-title a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--color-border);
+}
+
+.publication-title a:hover {
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
 }
 
 .publication-journal {
