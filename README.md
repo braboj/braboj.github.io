@@ -2,7 +2,7 @@
 
 Personal portfolio and teaching site for Branimir Georgiev — automation engineer, software engineer, and educator at the OT/IT boundary.
 
-**Live site:** https://braboj.github.io
+**Live site:** https://braboj.me
 
 ---
 
