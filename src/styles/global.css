@@ -1033,10 +1033,12 @@ code {
 
   .hero-grid-summary {
     grid-column: 1;
+    grid-row: 4;
   }
 
   .hero-grid-actions {
     grid-column: 1;
+    grid-row: 5;
   }
 
   /* Show hamburger, hide desktop links */
