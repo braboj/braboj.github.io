@@ -1,8 +1,8 @@
 # braboj.github.io
 
-Personal portfolio and teaching site for Branimir Georgiev — automation engineer, software engineer, and educator at the OT/IT boundary.
+Personal portfolio site for Branimir Georgiev — automation engineer, software engineer, and founder at the OT/IT boundary.
 
-**Live site:** https://braboj.me
+**Live site:** https://braboj.github.io
 
 ---
 
@@ -19,7 +19,7 @@ Personal portfolio and teaching site for Branimir Georgiev — automation engine
 ```
 src/
 ├── components/
-│   ├── interactive/        # React islands (HamburgerMenu, ContactForm)
+│   ├── interactive/        # React islands (HamburgerMenu)
 │   ├── Nav.astro
 │   ├── Hero.astro
 │   ├── About.astro
@@ -27,22 +27,21 @@ src/
 │   ├── Skills.astro
 │   ├── Projects.astro
 │   ├── Publications.astro
-│   ├── Education.astro
-│   ├── Teaching.astro
 │   ├── Contact.astro
 │   └── Footer.astro
 ├── data/                   # All editable content as JSON
-│   ├── site.json
-│   ├── experience.json
-│   ├── skills.json
-│   ├── projects.json
-│   ├── publications.json
-│   └── education.json
+│   ├── site.json           # Nav, hero, contact links, footer
+│   ├── about.json          # Biography story blocks
+│   ├── experience.json     # Work experience
+│   ├── skills.json         # Skill categories
+│   ├── projects.json       # Project cards
+│   └── publications.json   # Academic publications
 ├── layouts/
 │   └── Base.astro
 ├── pages/
 │   ├── index.astro
-│   └── privacy.astro
+│   ├── privacy.astro
+│   └── 404.astro
 └── styles/
     └── global.css
 ```
@@ -58,7 +57,7 @@ npm run preview   # preview production build locally
 
 ## Content
 
-All editable content lives in `src/data/` as JSON files. No JS/TS knowledge required to update content.
+All editable content lives in `src/data/` as JSON files. No programming knowledge required to update text, experience, skills, or projects.
 
 ## Deployment
 

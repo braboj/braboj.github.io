@@ -1,7 +1,7 @@
 # braboj.github.io — Claude Code Instructions
 
 ## Project
-Personal portfolio and teaching site for Branimir Georgiev — automation engineer, software engineer, and educator at the OT/IT boundary.
+Personal portfolio site for Branimir Georgiev — automation engineer, software engineer, and founder at the OT/IT boundary.
 
 - Owner: Branimir Georgiev
 - GitHub: https://github.com/braboj
@@ -35,13 +35,14 @@ Personal portfolio and teaching site for Branimir Georgiev — automation engine
 ## Content
 All editable content lives in `src/data/` as JSON. Never hardcode content that a non-developer might want to change.
 
-| File                      | Controls                                       |
-|---------------------------|------------------------------------------------|
-| `src/data/site.json`      | Nav links, hero text, contact section, footer  |
-| `src/data/about.json`     | Biography and background                       |
-| `src/data/projects.json`  | Portfolio/demo project cards                   |
-| `src/data/tutorials.json` | Tutorial links and descriptions                |
-| `src/data/blog.json`      | Blog post metadata                             |
+| File                       | Controls                                      |
+|----------------------------|-----------------------------------------------|
+| `src/data/site.json`       | Nav links, hero text, contact links, footer   |
+| `src/data/about.json`      | Biography story blocks (heading, years, text) |
+| `src/data/experience.json` | Work experience entries                       |
+| `src/data/skills.json`     | Skill categories and items                    |
+| `src/data/projects.json`   | Portfolio/demo project cards                  |
+| `src/data/publications.json` | Academic publications                       |
 
 Note: `src/content/` is intentionally avoided — Astro reserves that path for Content Collections.
 
@@ -50,34 +51,33 @@ Note: `src/content/` is intentionally avoided — Astro reserves that path for C
 ```
 src/components/
 ├── interactive/          # React islands — only components that need JS
-│   ├── HamburgerMenu.tsx # Mobile nav toggle
-│   └── ContactForm.tsx   # Contact form — POST to Formspree endpoint
+│   └── HamburgerMenu.tsx # Mobile nav toggle
 ├── Nav.astro             # Static nav shell — mounts HamburgerMenu island
-├── Hero.astro
-├── About.astro
-├── Projects.astro
-├── Tutorials.astro
-├── Blog.astro
-├── Contact.astro         # Contact section — email link + ContactForm island
-└── Footer.astro
+├── Hero.astro            # Hero section with photo, title, social links
+├── About.astro           # Biography — data-driven from about.json
+├── Experience.astro      # Work history — data-driven from experience.json
+├── Skills.astro          # Skills grid — data-driven from skills.json
+├── Projects.astro        # Project cards — data-driven from projects.json
+├── Publications.astro    # Publications list — data-driven from publications.json
+├── Contact.astro         # Contact section — email, LinkedIn, GitHub, CV download
+└── Footer.astro          # Copyright and legal links
 ```
 
 **Rule:** default to `.astro`. Only reach for React (`.tsx`) when client-side state is required.
 
 ## Pages
 
-| Page           | Path            | Notes                    |
-|----------------|-----------------|--------------------------|
-| Homepage       | `/`             | All main sections        |
-| Blog post      | `/blog/[slug]/` | Individual article pages |
-| Privacy Policy | `/privacy/`     | Legal page               |
+| Page           | Path        | Notes                  |
+|----------------|-------------|------------------------|
+| Homepage       | `/`         | All main sections      |
+| Privacy Policy | `/privacy/` | Legal page             |
+| Not Found      | `/404`      | Custom 404 page        |
 
 ## Reveal animations
 `.reveal` → `.reveal.visible` transition handled by a single `IntersectionObserver` script in `src/layouts/Base.astro`. Do not add per-component reveal scripts.
 
 ## Third-party services
 
-- **Formspree** — Contact form submission. Config: `src/data/site.json` -> `contact.formEndpoint`
 - **Plausible** — Privacy-friendly analytics (no cookies). Config: script tag in `src/layouts/Base.astro`
 - **Google Search Console** — Search indexing and crawl monitoring. Config: verification meta tag in `src/layouts/Base.astro`
 
@@ -85,7 +85,6 @@ src/components/
 Before every commit, update all relevant documentation:
 - **`CLAUDE.md`** — update if component architecture, stack, design rules, or conventions change
 - **`README.md`** — update if project structure, stack, or onboarding steps change
-- **`docs/PLAYBOOK.md`** — update if commands, git workflow, third-party services, or release process change
 
 ## Git conventions
 - Always work on a branch — never commit directly to `main`
