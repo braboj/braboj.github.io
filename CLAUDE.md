@@ -81,6 +81,37 @@ src/components/
 - **Plausible** — Privacy-friendly analytics (no cookies). Config: script tag in `src/layouts/Base.astro`
 - **Google Search Console** — Search indexing and crawl monitoring. Config: verification meta tag in `src/layouts/Base.astro`
 
+## Quality attributes
+
+These are the non-negotiable standards for this project:
+
+**Content & architecture**
+- All editable content lives in `src/data/` as JSON — never hardcoded in components
+- Default to `.astro`; only use React (`.tsx`) when client-side state is required
+- No dead code — remove unused components, CSS rules, and data files promptly
+
+**CSS**
+- All CSS in `src/styles/global.css` — no inline styles except dynamic/computed values
+- No hardcoded colour or spacing values — always use CSS custom properties from `:root`
+- BEM-like naming: `.component-element` (e.g. `.hero-grid`, `.experience-item`)
+
+**Accessibility**
+- Semantic HTML: `<main>`, `<section id="">`, correct heading hierarchy
+- `aria-label` on all interactive elements (buttons, icon links)
+- Keyboard navigation: menus must close on Escape and restore focus
+
+**Performance**
+- Preload critical above-the-fold assets (hero image)
+- Keep client-side JS minimal — static generation by default
+
+**SEO & analytics**
+- `robots.txt`, Open Graph, and Twitter Card meta tags required
+- Privacy-friendly analytics only (Plausible — no cookies, no consent banner needed)
+
+**Documentation**
+- `CLAUDE.md` and `README.md` must always reflect the actual codebase
+- No references to non-existent files, components, or services
+
 ## Documentation rule
 Before every commit, update all relevant documentation:
 - **`CLAUDE.md`** — update if component architecture, stack, design rules, or conventions change
