@@ -9,7 +9,7 @@
   },
   {
     "category": "Industrial Protocols",
-    "items": ["DeviceNet", "Modbus", "MQTT", "OPC-UA", "Profibus", "Profinet", "MOST"]
+    "items": ["DeviceNet", "Modbus", "MQTT", "OPC-UA", "OPC-DA", "OPC-XDA", "Profibus", "Profinet", "MOST"]
   },
   {
     "category": "Software & Tools",

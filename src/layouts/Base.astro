@@ -13,18 +13,34 @@ const { title = 'Branimir Georgiev', description = 'Automation Engineer. Softwar
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://braboj.github.io" />
+    <meta property="og:image" content="https://braboj.github.io/images/branimir-2.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://braboj.github.io/images/branimir-2.jpg" />
+    <link rel="preload" as="image" href="/images/branimir-2.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   </head>
   <body>
     <slot />
+    <button class="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
     <script>
       const observer = new IntersectionObserver(
         (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add('visible')),
         { threshold: 0.1 }
       );
       document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+      const btn = document.querySelector('.back-to-top');
+      window.addEventListener('scroll', () => {
+        btn.classList.toggle('visible', window.scrollY > 300);
+      });
     </script>
   </body>
 </html>
