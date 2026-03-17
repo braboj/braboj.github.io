@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 interface Link {
   label: string;
@@ -11,13 +11,28 @@ interface Props {
 
 export default function HamburgerMenu({ links }: Props) {
   const [open, setOpen] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setOpen(false);
+        buttonRef.current?.focus();
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [open]);
 
   return (
     <div className="hamburger-wrapper">
       <button
+        ref={buttonRef}
         className={`hamburger${open ? ' open' : ''}`}
         onClick={() => setOpen(!open)}
         aria-label="Toggle menu"
+        aria-expanded={open}
       >
         <span /><span /><span />
       </button>
