@@ -8,15 +8,14 @@
     { "label": "Skills",       "href": "#skills" },
     { "label": "Projects",     "href": "#projects" },
     { "label": "Publications", "href": "#publications" },
-    { "label": "Contact",      "href": "#contact" }
+    { "label": "Get in Touch", "href": "#contact", "cta": true }
   ],
   "contact": {
     "email": "contact@imbra.io",
     "linkedin": "https://linkedin.com/in/branimir-georgiev",
     "github": "https://github.com/braboj",
     "imbra": "https://imbra.io",
-    "teaching": "https://www.codewithbranko.com",
-    "formEndpoint": ""
+    "teaching": "https://www.codewithbranko.com"
   },
   "footer": {
     "copyright": "Branimir Georgiev",

@@ -79,6 +79,37 @@ src/components/
 |-----------|-----------|--------------------|
 | [Service] | [purpose] | [where configured] |
 
+## Quality attributes
+
+These are the non-negotiable standards for this project:
+
+**Content & architecture**
+- All editable content lives in `[data path]/` as [format] — never hardcoded in components
+- Default to [static component type]; only use [interactive framework] when client-side state is required
+- No dead code — remove unused components, CSS rules, and data files promptly
+
+**CSS**
+- All CSS in `[stylesheet path]` — no inline styles except dynamic/computed values
+- No hardcoded colour or spacing values — always use CSS custom properties from `:root`
+- Consistent naming convention: [e.g. BEM-like `.component-element`]
+
+**Accessibility**
+- Semantic HTML: correct landmark elements and heading hierarchy
+- `aria-label` on all interactive elements (buttons, icon links)
+- Keyboard navigation: menus must close on Escape and restore focus
+
+**Performance**
+- Preload critical above-the-fold assets
+- Keep client-side JS minimal — [rendering strategy] by default
+
+**SEO & analytics**
+- `robots.txt`, Open Graph, and Twitter Card meta tags required
+- Privacy-friendly analytics only (no consent banner required)
+
+**Documentation**
+- `CLAUDE.md` and `README.md` must always reflect the actual codebase
+- No references to non-existent files, components, or services
+
 ## Documentation rule
 Before every commit, update all relevant documentation:
 - **`CLAUDE.md`** — update if architecture, stack, design rules, or conventions change
