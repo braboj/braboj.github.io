@@ -1,0 +1,25 @@
+---
+import projects from '../data/projects.json';
+---
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title reveal">Projects</h2>
+    <div class="projects-grid">
+      {projects.map((project) => (
+        <div class="project-card reveal">
+          <div class="project-header">
+            <h3 class="project-name">{project.name}</h3>
+            <p class="project-tagline">{project.tagline}</p>
+          </div>
+          <p class="project-description">{project.description}</p>
+          <div class="tags">
+            {project.tags.map((tag) => <span class="tag">{tag}</span>)}
+          </div>
+          {project.url && (
+            <a href={project.url} class="project-link" target="_blank" rel="noopener noreferrer">View →</a>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+---
+import publications from '../data/publications.json';
+---
+<section id="publications" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title reveal">Publications</h2>
+    <div class="publications-list">
+      {publications.map((pub) => (
+        <div class="publication-item reveal">
+          <p class="publication-title">{pub.title}</p>
+          <p class="publication-journal">{pub.journal}</p>
+          <p class="publication-meta">{pub.authors} — {pub.ref}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

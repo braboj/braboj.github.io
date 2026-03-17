@@ -1,0 +1,14 @@
+---
+import site from '../data/site.json';
+const year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="footer-copy">© {year} {site.footer.copyright}</span>
+    <div class="footer-legal">
+      {site.footer.legal.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+    </div>
+  </div>
+</footer>

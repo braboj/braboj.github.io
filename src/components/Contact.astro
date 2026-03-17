@@ -1,0 +1,14 @@
+---
+import site from '../data/site.json';
+---
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <h2 class="section-title reveal">Contact</h2>
+    <div class="contact-links reveal">
+      <a href={`mailto:${site.contact.email}`} class="contact-link">{site.contact.email}</a>
+      <a href={site.contact.linkedin} class="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href={site.contact.github} class="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="/cv/CV_Branimir_Georgiev.pdf" class="contact-link" download>Download CV</a>
+    </div>
+  </div>
+</section>
