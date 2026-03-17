@@ -2,7 +2,7 @@
   {
     "company": "Heidelberg Materials Digital Hub Varna",
     "role": "Senior Software Engineer",
-    "period": "04/2025 – Present",
+    "period": "2026 – Present",
     "location": "Varna, Bulgaria",
     "description": "Providing L3 support for PxTrend, a legacy data historian from Paranext — delivering hotfixes and new features. Developing agent-based ETL pipelines to transfer data from OT to IT systems. Extending GitLab CI/CD pipelines for quality control automation. Authoring technical documentation in arc42 format.",
     "tags": ["Python", "Flask", "FastAPI", "Azure", "Docker", "GitLab", "ElasticSearch", "pytest", "pydantic", "arc42"]

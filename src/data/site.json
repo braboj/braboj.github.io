@@ -8,13 +8,14 @@
     { "label": "Skills",       "href": "#skills" },
     { "label": "Projects",     "href": "#projects" },
     { "label": "Publications", "href": "#publications" },
-    { "label": "Education",    "href": "#education" },
     { "label": "Contact",      "href": "#contact" }
   ],
   "contact": {
-    "email": "braboj@abv.bg",
+    "email": "contact@imbra.io",
     "linkedin": "https://linkedin.com/in/branimir-georgiev",
     "github": "https://github.com/braboj",
+    "imbra": "https://imbra.io",
+    "teaching": "https://www.codewithbranko.com",
     "formEndpoint": ""
   },
   "footer": {
