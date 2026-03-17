@@ -1,0 +1,15 @@
+---
+import site from '../data/site.json';
+import HamburgerMenu from './interactive/HamburgerMenu';
+---
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">{site.name}</a>
+    <ul class="nav-links">
+      {site.nav.map((link) => (
+        <li><a href={link.href}>{link.label}</a></li>
+      ))}
+    </ul>
+    <HamburgerMenu links={site.nav} client:load />
+  </div>
+</nav>

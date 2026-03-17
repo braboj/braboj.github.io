@@ -1,0 +1,34 @@
+[
+  {
+    "company": "Heidelberg Materials Digital Hub Varna",
+    "role": "Senior Software Engineer",
+    "period": "04/2025 – Present",
+    "location": "Varna, Bulgaria",
+    "description": "Providing L3 support for PxTrend, a legacy data historian from Paranext — delivering hotfixes and new features. Developing agent-based ETL pipelines to transfer data from OT to IT systems. Extending GitLab CI/CD pipelines for quality control automation. Authoring technical documentation in arc42 format.",
+    "tags": ["Python", "Flask", "FastAPI", "Azure", "Docker", "GitLab", "ElasticSearch", "pytest", "pydantic", "arc42"]
+  },
+  {
+    "company": "Hilscher Development and Test Center",
+    "role": "Senior Python Developer",
+    "period": "2019 – 04/2025",
+    "location": "Varna, Bulgaria",
+    "description": "Authored production-quality industrial protocol libraries in Python (MQTT, DeviceNet, OpenModbus over TLS). Built comprehensive and scalable test frameworks. Refactored legacy code into maintainable architecture using clean code principles. Created and maintained training programs for new recruits covering Python, OS, multi-threading, version control, and testing.",
+    "tags": ["Python", "Flask", "Playwright", "unittest", "Docker", "Git", "SVN", "DeviceNet", "CAN", "MQTT", "Modbus"]
+  },
+  {
+    "company": "Solvay Sodi",
+    "role": "Industrial Automation Engineer",
+    "period": "2009 – 2019",
+    "location": "Devnya, Bulgaria",
+    "description": "Adapted Honeywell control blocks for Siemens S7 PLCs using SCL. Built real-time cooling tower simulations based on 1D Merkel models with custom psychometric libraries. Implemented a Mamdani Fuzzy Logic Controller for carbonisation columns. Automated fly-ash and brine purification installations including HMI. Implemented an NH3 ammonia station and NH3 ammonia analyzer under ATEX/IECEx compliance.",
+    "tags": ["Siemens", "Honeywell", "Profibus", "Profinet", "Modbus", "SCL", "Matlab", "SciLab", "Visual Basic", "C#"]
+  },
+  {
+    "company": "X2E GmbH",
+    "role": "Software Developer Intern",
+    "period": "2005 – 2007",
+    "location": "Karlsruhe, Germany",
+    "description": "Implemented a MOST-protocol demonstration platform using VHDL and C. Built a flash library for firmware updates in C and C++. Developed an automatic testing system for company products using Ruby.",
+    "tags": ["C", "C++", "VHDL", "Ruby"]
+  }
+]

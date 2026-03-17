@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Technical",
+    "items": ["Software Engineering", "Quality Engineering", "Python Development", "Docker", "CI/CD Pipelines", "C", "Go"]
+  },
+  {
+    "category": "Industrial Automation",
+    "items": ["Siemens PLCs", "Honeywell", "Profibus", "Profinet", "SCL", "HMI", "PID Tuning", "Advanced Process Control", "ATEX/IECEx"]
+  },
+  {
+    "category": "Industrial Protocols",
+    "items": ["DeviceNet", "Modbus", "MQTT", "OPC-UA", "Profibus", "Profinet", "MOST"]
+  },
+  {
+    "category": "Software & Tools",
+    "items": ["Python", "Flask", "Docker", "Azure", "GitLab", "GitHub", "ElasticSearch", "pytest", "pydantic", "arc42", "JIRA"]
+  },
+  {
+    "category": "Professional",
+    "items": ["Project Ownership", "Documentation", "Mentoring", "Training", "Lean Agile", "SOLID Principles", "Design Patterns"]
+  },
+  {
+    "category": "Languages",
+    "items": ["Bulgarian (Native)", "English (Professional)", "German (Professional)", "French (Limited)"]
+  }
+]

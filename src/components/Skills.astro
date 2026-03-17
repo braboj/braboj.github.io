@@ -1,0 +1,18 @@
+o---
+import skills from '../data/skills.json';
+---
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title reveal">Skills</h2>
+    <div class="skills-grid">
+      {skills.map((group) => (
+        <div class="skill-group reveal">
+          <h3 class="skill-category">{group.category}</h3>
+          <div class="tags">
+            {group.items.map((item) => <span class="tag">{item}</span>)}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

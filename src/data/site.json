@@ -1,0 +1,26 @@
+{
+  "name": "Branimir Georgiev",
+  "title": "Automation Engineer. Software Engineer. Founder.",
+  "summary": "Dipl.-Ing. alumnus of Karlsruhe Institute of Technology (KIT). 15 years on industrial plant floors and software. Built protocol SDKs, industrial historians, and control systems for some of Bulgaria's largest plants and global manufacturing firms. Now building software tools that make the OT/IT boundary easier to cross.",
+  "nav": [
+    { "label": "About",        "href": "#about" },
+    { "label": "Experience",   "href": "#experience" },
+    { "label": "Skills",       "href": "#skills" },
+    { "label": "Projects",     "href": "#projects" },
+    { "label": "Publications", "href": "#publications" },
+    { "label": "Education",    "href": "#education" },
+    { "label": "Contact",      "href": "#contact" }
+  ],
+  "contact": {
+    "email": "braboj@abv.bg",
+    "linkedin": "https://linkedin.com/in/branimir-georgiev",
+    "github": "https://github.com/braboj",
+    "formEndpoint": ""
+  },
+  "footer": {
+    "copyright": "Branimir Georgiev",
+    "legal": [
+      { "label": "Privacy Policy", "href": "/privacy/" }
+    ]
+  }
+}
