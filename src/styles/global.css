@@ -362,7 +362,11 @@ code {
   text-decoration: none;
   cursor: pointer;
   border: none;
-  transition: background-color var(--transition), color var(--transition), border-color var(--transition), opacity var(--transition);
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition),
+    opacity var(--transition);
   white-space: nowrap;
 }
 
@@ -520,7 +524,7 @@ code {
   font-weight: 400;
   color: var(--color-accent);
   background-color: rgba(27, 79, 138, 0.08);
-  border: 1px solid rgba(27, 79, 138, 0.18);
+  border: 1px solid rgba(27, 79, 138, 0.18); /* accent tint */
   padding: 3px 10px;
   border-radius: 3px;
   letter-spacing: 0.02em;
@@ -709,7 +713,9 @@ code {
   font-weight: 500;
   color: var(--color-contact-text);
   text-decoration: none;
-  transition: border-color var(--transition), background-color var(--transition);
+  transition:
+    border-color var(--transition),
+    background-color var(--transition);
 }
 
 .contact-link:hover {
@@ -1119,7 +1125,36 @@ code {
 /* =========================================================
    Back to Top
    ========================================================= */
-.back-to-top { position: fixed; bottom: 32px; right: 32px; background: var(--color-accent); color: white; border: none; width: 40px; height: 40px; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.2s; z-index: 50; }
-.back-to-top.visible { opacity: 1; pointer-events: auto; }
-.back-to-top:hover { background: var(--color-accent-hover); }
-.back-to-top:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 50;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background: var(--color-accent-hover);
+}
+
+.back-to-top:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}

@@ -7,21 +7,47 @@ import site from '../data/site.json';
 
       <div class="hero-grid-eyebrow">
         <div class="hero-social">
-          <a href={site.contact.linkedin} class="hero-social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href={site.contact.github} class="hero-social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href={site.contact.imbra} class="hero-social-link" target="_blank" rel="noopener noreferrer">Imbra.io</a>
-          <a href={site.contact.teaching} class="hero-social-link" target="_blank" rel="noopener noreferrer">Code with Branko</a>
+          <a
+            href={site.contact.linkedin}
+            class="hero-social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >LinkedIn</a>
+          <a
+            href={site.contact.github}
+            class="hero-social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</a>
+          <a
+            href={site.contact.imbra}
+            class="hero-social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Imbra.io</a>
+          <a
+            href={site.contact.teaching}
+            class="hero-social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Code with Branko</a>
         </div>
       </div>
 
       <div class="hero-grid-photo" rowspan="2">
-        <img src="/images/branimir-2.jpg" alt="Branimir Georgiev" class="hero-photo" />
+        <img
+          src="/images/branimir-2.jpg"
+          alt="Branimir Georgiev"
+          class="hero-photo"
+        />
       </div>
 
       <div class="hero-grid-title">
         <h1 class="hero-title">
           {site.title.split('. ').map((line) => (
-            <span class="hero-title-line">{line.replace(/\.$/, '')}.</span>
+            <span class="hero-title-line">
+              {line.replace(/\.$/, '')}.
+            </span>
           ))}
         </h1>
       </div>
@@ -34,7 +60,11 @@ import site from '../data/site.json';
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Get in touch</a>
           <a href="#experience" class="btn btn-secondary">See experience</a>
-          <a href="/cv/CV_Branimir_Georgiev.pdf" class="btn btn-secondary" download>Download CV</a>
+          <a
+            href="/cv/CV_Branimir_Georgiev.pdf"
+            class="btn btn-secondary"
+            download
+          >Download CV</a>
         </div>
       </div>
 

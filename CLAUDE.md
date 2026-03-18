@@ -94,6 +94,7 @@ These are the non-negotiable standards for this project:
 - All CSS in `src/styles/global.css` — no inline styles except dynamic/computed values
 - No hardcoded colour or spacing values — always use CSS custom properties from `:root`
 - BEM-like naming: `.component-element` (e.g. `.hero-grid`, `.experience-item`)
+- Maximum line length: 80 characters (exempt: JSON prose strings, third-party URLs)
 
 **Accessibility**
 - Semantic HTML: `<main>`, `<section id="">`, correct heading hierarchy
