@@ -418,6 +418,13 @@ code {
   letter-spacing: -0.01em;
 }
 
+.about-cursor {
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  color: var(--color-accent);
+  margin-left: 8px;
+}
+
 .about-years {
   font-family: var(--font-mono);
   font-size: 0.75rem;

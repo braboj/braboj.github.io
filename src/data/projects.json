@@ -1,23 +1,20 @@
 [
   {
-    "name": "Imbra Connect",
-    "tagline": "Protocol SDK for industrial communication",
-    "description": "A Python SDK for DeviceNet, CAN, Modbus, OPC-UA, and MQTT — with packet crafting and adversarial testing as first-class features. Built to fill the gap no existing library could fill: testing the edge cases the spec doesn't cover.",
-    "tags": ["Python", "DeviceNet", "CAN", "Modbus", "OPC-UA", "MQTT"],
-    "url": "https://imbra.io"
-  },
-  {
-    "name": "ImBrain",
-    "tagline": "Industrial historian built for the plant floor",
-    "description": "An industrial historian that does what historians rarely do — actually work the way operators need them to. Built from firsthand experience with PxTrend and years of understanding what data matters on a plant floor.",
-    "tags": ["Python", "Time-Series", "Industrial Data", "OPC-UA"],
+    "name": "imbra.io",
+    "tagline": "Home of industrial software for the OT/IT boundary",
+    "description": "The company site for Imbra — where industrial communication SDKs, historians, and tools for the plant floor are built and documented.",
     "url": "https://imbra.io"
   },
   {
     "name": "Code with Branko",
     "tagline": "Practical courses for engineers at the OT/IT boundary",
     "description": "Guides and courses for engineers working at the intersection of operational technology and information technology. No fluff — built for people who need to ship.",
-    "tags": ["Python", "Industrial Automation", "Tutorials"],
     "url": "https://www.codewithbranko.com"
+  },
+  {
+    "name": "braboj.github.io",
+    "tagline": "Personal portfolio and engineering profile",
+    "description": "This site — a minimal portfolio built with Astro, showcasing experience, skills, and projects. Open source and deployed via GitHub Pages.",
+    "url": "https://github.com/braboj/braboj.github.io"
   }
 ]

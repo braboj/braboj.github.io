@@ -2,7 +2,7 @@
 
 Personal portfolio site for Branimir Georgiev — automation engineer, software engineer, and founder at the OT/IT boundary.
 
-**Live site:** https://braboj.github.io
+**Live site:** https://braboj.me
 
 ---
 
