@@ -92,6 +92,7 @@ These are the non-negotiable standards for this project:
 - All CSS in `[stylesheet path]` — no inline styles except dynamic/computed values
 - No hardcoded colour or spacing values — always use CSS custom properties from `:root`
 - Consistent naming convention: [e.g. BEM-like `.component-element`]
+- Maximum line length: 80 characters (exempt: JSON prose strings, third-party URLs)
 
 **Accessibility**
 - Semantic HTML: correct landmark elements and heading hierarchy

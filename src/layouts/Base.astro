@@ -4,7 +4,10 @@ export interface Props {
   title?: string;
   description?: string;
 }
-const { title = 'Branimir Georgiev', description = 'Automation Engineer. Software Engineer. Founder.' } = Astro.props;
+const {
+  title = 'Branimir Georgiev',
+  description = 'Automation Engineer. Software Engineer. Founder.'
+} = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -12,37 +15,65 @@ const { title = 'Branimir Georgiev', description = 'Automation Engineer. Softwar
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <meta name="google-site-verification" content="DZ4VvtY1DUgOvyLylawehVxGLpw8nmW-yHnWyBQrLgY" />
+    <meta
+      name="google-site-verification"
+      content="DZ4VvtY1DUgOvyLylawehVxGLpw8nmW-yHnWyBQrLgY"
+    />
     <title>{title}</title>
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://braboj.github.io" />
-    <meta property="og:image" content="https://braboj.github.io/images/branimir-2.jpg" />
+    <meta
+      property="og:image"
+      content="https://braboj.github.io/images/branimir-2.jpg"
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="https://braboj.github.io/images/branimir-2.jpg" />
+    <meta
+      name="twitter:image"
+      content="https://braboj.github.io/images/branimir-2.jpg"
+    />
     <link rel="preload" as="image" href="/images/branimir-2.jpg" />
     <!-- Privacy-friendly analytics by Plausible -->
-    <script async src="https://plausible.io/js/pa-2AE3k8ssDjXnWWOptVz7e.js"></script>
+    <script
+      async
+      src="https://plausible.io/js/pa-2AE3k8ssDjXnWWOptVz7e.js"
+    ></script>
     <script>
-      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-      plausible.init()
+      window.plausible = window.plausible || function() {
+        (plausible.q = plausible.q || []).push(arguments)
+      };
+      plausible.init = plausible.init || function(i) {
+        plausible.o = i || {}
+      };
+      plausible.init();
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <slot />
-    <button class="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+    <button
+      class="back-to-top"
+      aria-label="Back to top"
+      onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    >↑</button>
     <script>
       const observer = new IntersectionObserver(
-        (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add('visible')),
+        (entries) => entries.forEach(
+          (e) => e.isIntersecting && e.target.classList.add('visible')
+        ),
         { threshold: 0.1 }
       );
-      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+      document.querySelectorAll('.reveal').forEach(
+        (el) => observer.observe(el)
+      );
 
       const btn = document.querySelector('.back-to-top');
       window.addEventListener('scroll', () => {

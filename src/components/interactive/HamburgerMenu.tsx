@@ -40,7 +40,10 @@ export default function HamburgerMenu({ links }: Props) {
         <ul className="mobile-menu">
           {links.map((link) => (
             <li key={link.href}>
-              <a href={link.href} onClick={() => setOpen(false)}>{link.label}</a>
+              <a
+                href={link.href}
+                onClick={() => setOpen(false)}
+              >{link.label}</a>
             </li>
           ))}
         </ul>
