@@ -10,6 +10,7 @@
     { "label": "Publications", "href": "#publications" },
     { "label": "Get in Touch", "href": "#contact" }
   ],
+
   "contact": {
     "email": "contact@imbra.io",
     "linkedin": "https://linkedin.com/in/branimir-georgiev",

@@ -12,9 +12,6 @@ import projects from '../data/projects.json';
             <p class="project-tagline">{project.tagline}</p>
           </div>
           <p class="project-description">{project.description}</p>
-          <div class="tags">
-            {project.tags.map((tag) => <span class="tag">{tag}</span>)}
-          </div>
           {project.url && (
             <a href={project.url} class="project-link" target="_blank" rel="noopener noreferrer">View →</a>
           )}

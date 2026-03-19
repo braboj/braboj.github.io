@@ -1,26 +1,26 @@
 [
   {
     "category": "Technical",
-    "items": ["Software Engineering", "Quality Engineering", "Python Development", "Docker", "CI/CD Pipelines", "C", "Go"]
+    "items": ["Software Engineering", "QA Engineering", "TDD", "BDD", "Python", "C", "Go", "Docker", "CI/CD Pipelines"]
   },
   {
     "category": "Industrial Automation",
-    "items": ["Siemens PLCs", "Honeywell", "Profibus", "Profinet", "SCL", "HMI", "PID Tuning", "Advanced Process Control", "ATEX/IECEx"]
+    "items": ["Siemens PLCs", "TIA Portal", "Honeywell", "SCL", "HMI", "PID Tuning", "Advanced Process Control", "ATEX/IECEx"]
   },
   {
     "category": "Industrial Protocols",
-    "items": ["DeviceNet", "Modbus", "MQTT", "OPC-UA", "OPC-DA", "OPC-XDA", "Profibus", "Profinet", "MOST"]
+    "items": ["CAN", "CANopen", "CIP", "DeviceNet", "EtherNet/IP", "HART", "IO-Link", "Profibus", "Profinet", "Modbus", "MQTT", "Sparkplug", "OPC-DA", "OPC-UA", "MOST", "FlexRay", "LoRaWAN", "Zigbee"]
   },
   {
     "category": "Software & Tools",
-    "items": ["Python", "Flask", "Docker", "Azure", "GitLab", "GitHub", "ElasticSearch", "pytest", "pydantic", "arc42", "JIRA"]
+    "items": ["PostgreSQL", "TimescaleDB", "ElasticSearch", "Docker", "Podman", "Azure", "Grafana", "GitLab", "GitHub", "REST", "gRPC", "arc42", "Mermaid", "JIRA"]
   },
   {
     "category": "Professional",
-    "items": ["Project Ownership", "Documentation", "Mentoring", "Training", "Lean Agile", "SOLID Principles", "Design Patterns"]
+    "items": ["Project Ownership", "Project Management", "Mentoring", "Training", "Documentation", "Lean Agile", "SOLID Principles", "Design Patterns"]
   },
   {
     "category": "Languages",
-    "items": ["Bulgarian (Native)", "English (Professional)", "German (Professional)", "French (Limited)"]
+    "items": ["Bulgarian (Native)", "English (Professional)", "German (Conversational)", "French (Limited)"]
   }
 ]

@@ -13,7 +13,7 @@
     "period": "2019 – 04/2025",
     "location": "Varna, Bulgaria",
     "description": "Authored production-quality industrial protocol libraries in Python (MQTT, DeviceNet, OpenModbus over TLS). Built comprehensive and scalable test frameworks. Refactored legacy code into maintainable architecture using clean code principles. Created and maintained training programs for new recruits covering Python, OS, multi-threading, version control, and testing.",
-    "tags": ["Python", "Flask", "Playwright", "unittest", "Docker", "Git", "SVN", "DeviceNet", "CAN", "MQTT", "Modbus"]
+    "tags": ["Python", "netX", "Flask", "unittest", "Docker", "Git", "SVN", "DeviceNet", "CAN", "MQTT", "Modbus"]
   },
   {
     "company": "Solvay Sodi",

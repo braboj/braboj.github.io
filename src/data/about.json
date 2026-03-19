@@ -12,7 +12,8 @@
     "years": "2019 – 2025",
     "paragraphs": [
       "At Hilscher, Branimir moved into software and discovered Python. He hit a gap no existing library could fill: protocol stacks built ONLY for communication, not for testing. You cannot craft malformed packets. You cannot simulate edge cases the spec does not cover.",
-      "That gap is where Imbra Connect began. The SDK grew to cover DeviceNet, CAN, Modbus, OPC-UA, and MQTT. Brutal deadlines from tier-1 American semiconductor equipment manufacturers. Impossible milestones. All delivered. The model was lean: developer and tester working in parallel, every artifact shipped already tested. Branimir had a penchant for crashing things on a Friday afternoon, or right before a public holiday — because that is when developers reveal their true dedication. He trained six engineers and earned the nickname <em>the bastard from heaven</em> in tester mode and <em>master-blaster</em> in developer mode."
+      "That gap is where Imbra Connect began. The SDK grew to cover DeviceNet, CAN, Modbus, OPC-UA, and MQTT. Brutal deadlines from tier-1 American semiconductor equipment manufacturers. Impossible milestones. All delivered. The model was lean: developer and tester working in parallel, every artifact shipped already tested.",
+      "Branimir had a penchant for crashing things on a Friday afternoon, or right before a public holiday — because that is when developers reveal their true dedication. He trained six engineers and earned the nickname <em>the bastard from heaven</em> in tester mode and <em>master-blaster</em> in developer mode."
     ]
   },
   {
@@ -26,7 +27,7 @@
     "heading": "When the Prophet goes to the mountain",
     "years": "2026 – Present",
     "paragraphs": [
-      "As the old proverb goes — if the mountain won't come to Muhammad, Muhammad must go to the mountain. Imbra.Soft was founded after Branimir's daughter was born and an inspiration followed: help people prototype and build with low cost and high quality, bring back the fun of engineering and experimenting for young and professionals alike. Build tools that last. Every product comes from 15 years of knowing firsthand what it costs when the software fails — and the people that have to live with the consequences. <blockquote class=\"statement\">\"The complexity is ours to solve.\"</blockquote>"
+      "As the old proverb goes — if the mountain won't come to Muhammad, Muhammad must go to the mountain. Imbra was founded after Branimir's daughter was born and an inspiration followed: help people prototype and build with low cost and high quality, bring back the fun of engineering and experimenting for young and professionals alike. Build tools that last. Every product comes from 15 years of knowing firsthand what it costs when the software fails — and the people that have to live with the consequences. <blockquote class=\"statement\">\"The complexity is ours to solve.\"</blockquote>"
     ]
   }
 ]
