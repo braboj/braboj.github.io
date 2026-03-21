@@ -1,13 +1,5 @@
 [
   {
-    "company": "Imbra.io",
-    "role": "Founder & Lead Engineer",
-    "period": "2026 – Present",
-    "location": "Varna, Bulgaria",
-    "description": "Building software tools at the OT/IT boundary — from protocol SDKs to industrial historians. Products include ImBrain, a historian built on 15 years of firsthand experience with what industrial software costs when it fails. Sole developer and engineer: design, implementation, testing, and deployment.",
-    "tags": ["Python", "Protocol SDKs", "DeviceNet", "Modbus", "OPC-UA", "MQTT", "Docker", "FastAPI", "TimescaleDB", "Grafana"]
-  },
-  {
     "company": "Heidelberg Materials Digital Hub Varna",
     "role": "Senior Software Engineer",
     "period": "2025 – Present",
