@@ -1,8 +1,7 @@
-# Imbra.Soft Website — Playbook
+# braboj.github.io — Playbook
 
-> **Windows note:** `gh` must be invoked via full path in bash:
-> `"/c/Program Files/GitHub CLI/gh.exe" <command>`
-> All examples below use `gh` for brevity — substitute the full path on Windows.
+Operational reference for common tasks. For project conventions and rules,
+see `CLAUDE.md`. For onboarding, see `docs/ONBOARDING.md`.
 
 ---
 
@@ -24,26 +23,27 @@ npm run preview   # preview the production build locally
 # Start a new feature or fix
 git checkout main
 git pull
-git checkout -b feature/description   # or fix/description
+git checkout -b feat/description   # or fix/, chore/, docs/
 
 # Stage and commit
 git add <file1> <file2>
 git commit -m "feat: short description"
 
 # Push and open PR
-git push -u origin feature/description
-gh pr create --repo Imbra-Ltd/imbra-ltd.github.io --title "feat: description" --body "..."
+git push -u origin feat/description
+gh pr create --title "feat: description" --body "..."
 ```
 
 ### Commit message conventions
 
 ```
-feat:     new feature
-fix:      bug fix
+feat:     new feature or content addition
+fix:      bug fix or correction
 chore:    maintenance, releases, tooling
 docs:     documentation only
 style:    CSS/formatting, no logic change
 refactor: code change that neither fixes a bug nor adds a feature
+test:     test additions or changes
 ```
 
 ### Release workflow
@@ -52,19 +52,28 @@ refactor: code change that neither fixes a bug nor adds a feature
 git checkout main
 git pull
 
-# 1. Empty release marker commit
-git commit --allow-empty -m "chore: release v0.0.1.0"
+# 1. Create release branch
+git checkout -b chore/release-vA.B.C.D
 
-# 2. Tag and push
-git tag v0.0.1.0
-git push
-git push origin v0.0.1.0
+# 2. Empty release marker commit
+git commit --allow-empty -m "chore: release vA.B.C.D"
 
-# 3. Create GitHub release
-gh release create v0.0.1.0 \
-  --repo Imbra-Ltd/imbra-ltd.github.io \
-  --title "v0.0.1.0" \
-  --notes "Release notes here"
+# 3. Push and open PR
+git push -u origin chore/release-vA.B.C.D
+gh pr create --title "chore: release vA.B.C.D" --body "Release vA.B.C.D"
+
+# 4. After PR is merged, tag main
+git checkout main && git pull
+git tag vA.B.C.D
+git push origin vA.B.C.D
+```
+
+### After a PR is merged
+
+```bash
+git checkout main && git pull
+git branch -d <branch>
+gh api -X DELETE repos/braboj/braboj.github.io/git/refs/heads/<branch>
 ```
 
 ### Useful git commands
@@ -77,7 +86,6 @@ git status                     # working tree status
 git stash                      # stash uncommitted changes
 git stash pop                  # restore stashed changes
 git tag                        # list all tags
-git checkout v0.0.1.0          # checkout a specific release
 ```
 
 ---
@@ -87,45 +95,25 @@ git checkout v0.0.1.0          # checkout a specific release
 ### Issues
 
 ```bash
-gh issue list --repo Imbra-Ltd/imbra-ltd.github.io --state open
-gh issue create --repo Imbra-Ltd/imbra-ltd.github.io --title "Title" --body "Body"
-gh issue edit 12 --repo Imbra-Ltd/imbra-ltd.github.io --title "New title"
-gh issue close 12 --repo Imbra-Ltd/imbra-ltd.github.io
-gh issue close 12 --repo Imbra-Ltd/imbra-ltd.github.io --comment "Reason"
-```
-
-### Milestones
-
-```bash
-# Create a milestone
-gh api repos/Imbra-Ltd/imbra-ltd.github.io/milestones \
-  --method POST --field title="v0.0.2.0"
-
-# Assign issue to milestone
-gh issue edit 8 --repo Imbra-Ltd/imbra-ltd.github.io --milestone "v0.0.2.0"
+gh issue list --state open
+gh issue create --title "Title" --body "Body"
+gh issue close 12 --comment "Reason"
 ```
 
 ### Pull requests
 
 ```bash
-gh pr create --repo Imbra-Ltd/imbra-ltd.github.io \
-  --title "feat: description" \
-  --body "## Summary\n..."
-
-gh pr list --repo Imbra-Ltd/imbra-ltd.github.io
-gh pr view 37 --repo Imbra-Ltd/imbra-ltd.github.io --json state,title
-gh pr merge 37 --repo Imbra-Ltd/imbra-ltd.github.io
+gh pr create --title "feat: description" --body "## Summary\n..."
+gh pr list
+gh pr status
+gh pr merge <number>
 ```
 
 ### Releases
 
 ```bash
-gh release create v0.0.1.0 \
-  --repo Imbra-Ltd/imbra-ltd.github.io \
-  --title "v0.0.1.0" \
-  --notes "Release notes here"
-
-gh release list --repo Imbra-Ltd/imbra-ltd.github.io
+gh release create vA.B.C.D --title "vA.B.C.D" --notes "Release notes"
+gh release list
 ```
 
 ---
@@ -134,34 +122,27 @@ gh release list --repo Imbra-Ltd/imbra-ltd.github.io
 
 All site content lives in `src/data/` as JSON. No component knowledge required.
 
-| File | Controls |
-|------|----------|
-| `src/data/site.json` | Nav links, hero stats, contact section (incl. Formspree endpoint), footer |
-| `src/data/products.json` | Portfolio cards and detail panels |
-| `src/data/services.json` | Services accordion items |
-| `src/data/expertise.json` | Domain expertise cards |
-| `src/data/publications.json` | Research publications with DOI links |
-| `src/data/process.json` | How We Work section steps |
-| `src/data/pricing.json` | Pricing page — all engagement models |
-
----
-
-## Third-party services
-
-| Service | Purpose | Config |
-|---------|---------|--------|
-| [Formspree](https://formspree.io) | Contact form → `contact@imbra.io` | `src/data/site.json` → `contact.formEndpoint` |
-| [Plausible](https://plausible.io) | Privacy-friendly analytics (no cookies, no consent banner) | Script tag in `src/layouts/Base.astro` |
+| File                         | Controls                                      |
+|------------------------------|-----------------------------------------------|
+| `src/data/site.json`         | Nav links, hero text, contact links, footer   |
+| `src/data/about.json`        | Biography story blocks                        |
+| `src/data/experience.json`   | Work experience entries                       |
+| `src/data/skills.json`       | Skill categories and items                    |
+| `src/data/projects.json`     | Project cards                                 |
+| `src/data/tutorials.json`    | Tutorial cards                                |
+| `src/data/publications.json` | Academic publications                         |
 
 ---
 
 ## Deployment
 
-Pushing to `main` triggers GitHub Actions which builds and deploys to GitHub Pages automatically.
+Pushing to `main` triggers GitHub Actions which builds and deploys to
+GitHub Pages automatically.
 
 ```bash
 git checkout main
+git pull
 git push   # triggers deploy
 ```
 
-Monitor: `https://github.com/Imbra-Ltd/imbra-ltd.github.io/actions`
+Monitor: `https://github.com/braboj/braboj.github.io/actions`

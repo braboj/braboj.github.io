@@ -49,23 +49,8 @@ Note: `src/content/` is intentionally avoided — Astro reserves that path for C
 
 ## Component architecture
 
-```
-src/components/
-├── interactive/          # React islands — only components that need JS
-│   └── HamburgerMenu.tsx # Mobile nav toggle
-├── Nav.astro             # Static nav shell — mounts HamburgerMenu island
-├── Hero.astro            # Hero section with photo, title, social links
-├── About.astro           # Biography — data-driven from about.json
-├── Experience.astro      # Work history — data-driven from experience.json
-├── Skills.astro          # Skills grid — data-driven from skills.json
-├── Projects.astro        # Project cards — data-driven from projects.json
-├── Tutorials.astro       # Tutorial cards — data-driven from tutorials.json
-├── Publications.astro    # Publications list — data-driven from publications.json
-├── Contact.astro         # Contact section — email, LinkedIn, GitHub, CV download
-└── Footer.astro          # Copyright and legal links
-```
-
-**Rule:** default to `.astro`. Only reach for React (`.tsx`) when client-side state is required.
+See `README.md` for the full project structure. Key rule: default to
+`.astro`. Only reach for React (`.tsx`) when client-side state is required.
 
 ## Pages
 
@@ -113,6 +98,8 @@ These are the non-negotiable standards for this project:
 
 **Documentation**
 - `CLAUDE.md` and `README.md` must always reflect the actual codebase
+- `docs/ONBOARDING.md` — onboarding guide for new contributors
+- `docs/PLAYBOOK.md` — operational reference for common tasks
 - No references to non-existent files, components, or services
 
 ## Documentation rule

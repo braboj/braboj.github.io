@@ -26,6 +26,7 @@ src/
 │   ├── Experience.astro
 │   ├── Skills.astro
 │   ├── Projects.astro
+│   ├── Tutorials.astro
 │   ├── Publications.astro
 │   ├── Contact.astro
 │   └── Footer.astro
@@ -35,6 +36,7 @@ src/
 │   ├── experience.json     # Work experience
 │   ├── skills.json         # Skill categories
 │   ├── projects.json       # Project cards
+│   ├── tutorials.json      # Tutorial cards
 │   └── publications.json   # Academic publications
 ├── layouts/
 │   └── Base.astro
