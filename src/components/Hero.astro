@@ -44,10 +44,8 @@ import site from '../data/site.json';
 
       <div class="hero-grid-title">
         <h1 class="hero-title">
-          {site.title.split('. ').map((line) => (
-            <span class="hero-title-line">
-              {line.replace(/\.$/, '')}.
-            </span>
+          {site.title.map((line) => (
+            <span class="hero-title-line">{line}</span>
           ))}
         </h1>
       </div>
