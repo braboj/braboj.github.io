@@ -1,8 +1,16 @@
 [
   {
+    "company": "Imbra.io",
+    "role": "Founder & Lead Engineer",
+    "period": "2026 – Present",
+    "location": "Varna, Bulgaria",
+    "description": "Building software tools at the OT/IT boundary — from protocol SDKs to industrial historians. Products include ImBrain, a historian built on 15 years of firsthand experience with what industrial software costs when it fails. Sole developer and engineer: design, implementation, testing, and deployment.",
+    "tags": ["Python", "Protocol SDKs", "DeviceNet", "Modbus", "OPC-UA", "MQTT", "Docker", "FastAPI", "TimescaleDB", "Grafana"]
+  },
+  {
     "company": "Heidelberg Materials Digital Hub Varna",
     "role": "Senior Software Engineer",
-    "period": "2026 – Present",
+    "period": "2025 – Present",
     "location": "Varna, Bulgaria",
     "description": "Providing L3 support for PxTrend, a legacy data historian from Paranext — delivering hotfixes and new features. Developing agent-based ETL pipelines to transfer data from OT to IT systems. Extending GitLab CI/CD pipelines for quality control automation. Authoring technical documentation in arc42 format.",
     "tags": ["Python", "Flask", "FastAPI", "Azure", "Docker", "GitLab", "ElasticSearch", "pytest", "pydantic", "arc42"]
