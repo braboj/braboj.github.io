@@ -121,6 +121,9 @@ Before every commit, update all relevant documentation:
 - **`README.md`** — update if project structure, stack, or onboarding steps change
 
 ## Git conventions
+- Commit messages must use conventional commit prefixes: `feat:`, `fix:`, `chore:`, `docs:`, `refactor:`, `style:`, `test:`
+- Versioning follows `vA.B.C.D` — A=major, B=minor, C=build, D=hotfix
+- Releases are marked with an empty `chore: release vA.B.C.D` commit followed by a git tag
 - Always work on a branch — never commit directly to `main`
 - Exception: documentation-only changes (`docs/`, `README.md`, `CLAUDE.md`) may go directly to `main`
 - Branch naming: `feature/description` or `fix/description`
