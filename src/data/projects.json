@@ -2,7 +2,7 @@
   {
     "name": "imbra.io",
     "tagline": "Home of industrial software for the OT/IT boundary",
-    "description": "The company site for Imbra — where industrial communication SDKs, historians, and tools for the plant floor are built and documented.",
+    "description": "The company site for Imbra — home of Imbra Connect (industrial protocol SDKs for DeviceNet, Modbus, OPC-UA, and MQTT) and ImBrain (an industrial historian built for the plant floor).",
     "url": "https://imbra.io"
   },
   {
@@ -16,5 +16,35 @@
     "tagline": "Personal portfolio and engineering profile",
     "description": "This site — a minimal portfolio built with Astro, showcasing experience, skills, and projects. Open source and deployed via GitHub Pages.",
     "url": "https://github.com/braboj/braboj.github.io"
+  },
+  {
+    "name": "demo-sensor-app",
+    "tagline": "Simulated sensor data sampling with REST and Angular",
+    "description": "A full-stack demo app simulating industrial sensor data — REST API built with Flask, visualised with Angular.",
+    "url": "https://github.com/braboj/demo-sensor-app"
+  },
+  {
+    "name": "demo-the-great-wall",
+    "tagline": "REST API with multiprocessing and Django",
+    "description": "A REST API demo using Django and multiprocessing — built to demonstrate parallel workload handling patterns.",
+    "url": "https://github.com/braboj/demo-the-great-wall"
+  },
+  {
+    "name": "demo-randomgen",
+    "tagline": "Random number generator REST API with Flask",
+    "description": "A minimal REST API demo built with Flask — clean starting point for API design patterns.",
+    "url": "https://github.com/braboj/demo-randomgen"
+  },
+  {
+    "name": "demo-hvlp",
+    "tagline": "Simplified MQTT protocol demo for training",
+    "description": "A simplified MQTT protocol implementation used for training engineers on industrial messaging patterns.",
+    "url": "https://github.com/braboj/demo-hvlp"
+  },
+  {
+    "name": "demo-state-machines",
+    "tagline": "State machine implementation in C",
+    "description": "A sample implementation of state machines in C — a fundamental pattern in embedded and industrial control systems.",
+    "url": "https://github.com/braboj/demo-state-machines"
   }
 ]

@@ -42,6 +42,7 @@ All editable content lives in `src/data/` as JSON. Never hardcode content that a
 | `src/data/experience.json` | Work experience entries                       |
 | `src/data/skills.json`     | Skill categories and items                    |
 | `src/data/projects.json`   | Portfolio/demo project cards                  |
+| `src/data/tutorials.json`  | Tutorial repository cards                     |
 | `src/data/publications.json` | Academic publications                       |
 
 Note: `src/content/` is intentionally avoided — Astro reserves that path for Content Collections.
@@ -58,6 +59,7 @@ src/components/
 ├── Experience.astro      # Work history — data-driven from experience.json
 ├── Skills.astro          # Skills grid — data-driven from skills.json
 ├── Projects.astro        # Project cards — data-driven from projects.json
+├── Tutorials.astro       # Tutorial cards — data-driven from tutorials.json
 ├── Publications.astro    # Publications list — data-driven from publications.json
 ├── Contact.astro         # Contact section — email, LinkedIn, GitHub, CV download
 └── Footer.astro          # Copyright and legal links

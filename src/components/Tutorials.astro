@@ -1,0 +1,22 @@
+---
+import tutorials from '../data/tutorials.json';
+---
+<section id="tutorials" class="section">
+  <div class="container">
+    <h2 class="section-title reveal">Tutorials</h2>
+    <div class="projects-grid">
+      {tutorials.map((tutorial) => (
+        <div class="project-card reveal">
+          <div class="project-header">
+            <h3 class="project-name">{tutorial.name}</h3>
+            <p class="project-tagline">{tutorial.tagline}</p>
+          </div>
+          <p class="project-description">{tutorial.description}</p>
+          {tutorial.url && (
+            <a href={tutorial.url} class="project-link" target="_blank" rel="noopener noreferrer">View →</a>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

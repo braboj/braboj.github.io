@@ -1,0 +1,62 @@
+[
+  {
+    "name": "tutorial-azure",
+    "tagline": "Azure cloud training",
+    "description": "A hands-on Azure tutorial covering cloud fundamentals — compute, storage, and deployment for engineers new to the platform.",
+    "url": "https://github.com/braboj/tutorial-azure"
+  },
+  {
+    "name": "tutorial-docker",
+    "tagline": "Docker training program",
+    "description": "A structured Docker training program covering containers, images, volumes, and compose — built for engineers moving workloads to containers.",
+    "url": "https://github.com/braboj/tutorial-docker"
+  },
+  {
+    "name": "tutorial-git",
+    "tagline": "Let's learn git",
+    "description": "A beginner-friendly Git tutorial covering the core workflow — commits, branches, merges, and collaboration patterns.",
+    "url": "https://github.com/braboj/tutorial-git"
+  },
+  {
+    "name": "tutorial-microprocessor",
+    "tagline": "Basic components of a CPU explained",
+    "description": "A simple tutorial on CPU architecture — registers, ALU, memory, and instruction cycles for engineers interested in low-level systems.",
+    "url": "https://github.com/braboj/tutorial-microprocessor"
+  },
+  {
+    "name": "tutorial-modbus",
+    "tagline": "Open Modbus protocol tutorial",
+    "description": "A practical tutorial on the Modbus protocol — covering framing, function codes, and implementation patterns for industrial communication.",
+    "url": "https://github.com/braboj/tutorial-modbus"
+  },
+  {
+    "name": "tutorial-networks",
+    "tagline": "Network and protocols tutorial",
+    "description": "A practical guide to networking fundamentals and protocol concepts — from OSI layers to hands-on packet analysis.",
+    "url": "https://github.com/braboj/tutorial-networks"
+  },
+  {
+    "name": "tutorial-openssl",
+    "tagline": "OpenSSL command line interface tutorial",
+    "description": "A short tutorial on the basic features of the OpenSSL CLI — certificates, keys, and TLS fundamentals for engineers.",
+    "url": "https://github.com/braboj/tutorial-openssl"
+  },
+  {
+    "name": "tutorial-os",
+    "tagline": "Into the depths of parallel execution",
+    "description": "A deep dive into operating system concepts with a focus on parallel execution — processes, threads, and synchronisation for systems engineers.",
+    "url": "https://github.com/braboj/tutorial-os"
+  },
+  {
+    "name": "tutorial-python",
+    "tagline": "Source code for \"Learn Python by Example\"",
+    "description": "Companion repository for the Learn Python by Example course — practical examples for engineers picking up Python.",
+    "url": "https://github.com/braboj/tutorial-python"
+  },
+  {
+    "name": "tutorial-testing",
+    "tagline": "Let's learn breaking things",
+    "description": "A hands-on testing tutorial covering how to break software systematically — written for engineers who need to ship reliable code.",
+    "url": "https://github.com/braboj/tutorial-testing"
+  }
+]
