@@ -6,12 +6,6 @@
     "url": "https://imbra.io"
   },
   {
-    "name": "Code with Branko",
-    "tagline": "Practical courses for engineers at the OT/IT boundary",
-    "description": "Guides and courses for engineers working at the intersection of operational technology and information technology. No fluff — built for people who need to ship.",
-    "url": "https://www.codewithbranko.com"
-  },
-  {
     "name": "braboj.github.io",
     "tagline": "Personal portfolio and engineering profile",
     "description": "This site — a minimal portfolio built with Astro, showcasing experience, skills, and projects. Open source and deployed via GitHub Pages.",
