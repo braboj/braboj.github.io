@@ -1,7 +1,7 @@
 {
   "name": "Branimir Georgiev",
   "title": ["Engineer. Hacker.", "Vibe Coder. Founder."],
-  "summary": "Dipl.-Ing. alumnus of Karlsruhe Institute of Technology (KIT). 15 years on industrial plant floors and in software. Built protocol SDKs, industrial historians, and control systems for some of Bulgaria's largest plants and global manufacturing firms. Now founder and lead engineer at Imbra.io — building tools that make the OT/IT boundary easier to cross.",
+  "summary": "Dipl.-Ing. alumnus of Karlsruhe Institute of Technology (KIT). 15 years on industrial plant floors and in software. Built protocol SDKs, industrial historians, and control systems for some of Bulgaria's largest plants and global manufacturing firms.",
   "nav": [
     { "label": "About",        "href": "#about" },
     { "label": "Experience",   "href": "#experience" },
@@ -13,10 +13,9 @@
   ],
 
   "contact": {
-    "email": "contact@imbra.io",
+    "email": "braboj@abv.bg",
     "linkedin": "https://linkedin.com/in/branimir-georgiev",
-    "github": "https://github.com/braboj",
-    "imbra": "https://imbra.io"
+    "github": "https://github.com/braboj"
   },
   "footer": {
     "copyright": "Branimir Georgiev",

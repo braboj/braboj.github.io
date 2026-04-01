@@ -1,11 +1,5 @@
 [
   {
-    "name": "imbra.io",
-    "tagline": "Home of industrial software for the OT/IT boundary",
-    "description": "The company site for Imbra — home of Imbra Connect (industrial protocol SDKs for DeviceNet, Modbus, OPC-UA, and MQTT) and ImBrain (an industrial historian built for the plant floor).",
-    "url": "https://imbra.io"
-  },
-  {
     "name": "braboj.github.io",
     "tagline": "Personal portfolio and engineering profile",
     "description": "This site — a minimal portfolio built with Astro, showcasing experience, skills, and projects. Open source and deployed via GitHub Pages.",

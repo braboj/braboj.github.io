@@ -5,7 +5,7 @@ Personal portfolio site for Branimir Georgiev — automation engineer, software 
 
 - Owner: Branimir Georgiev
 - GitHub: https://github.com/braboj
-- Contact: contact@imbra.io
+- Contact: braboj@abv.bg
 - LinkedIn: https://linkedin.com/in/branimir-georgiev
 - Deployed to GitHub Pages at https://braboj.github.io via GitHub Actions on push to `main`
 
