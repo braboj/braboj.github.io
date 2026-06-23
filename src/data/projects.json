@@ -9,7 +9,7 @@
     {
       "name": "imbra.io",
       "tagline": "Home of industrial software for the OT/IT boundary",
-      "description": "The company site for Imbra — home of Imbra Connect (industrial protocol SDKs for DeviceNet, Modbus, OPC-UA, and MQTT) and ImBrain (an industrial historian built for the plant floor).",
+      "description": "The company site for Imbra — home of Imbra Connect, a suite of industrial protocol SDKs covering DeviceNet, Modbus, OPC-UA, and MQTT.",
       "url": "https://imbra.io"
     },
     {
@@ -17,6 +17,18 @@
       "tagline": "Pick the right Fujifilm lens with lab data, not marketing",
       "description": "A lightweight, offline-friendly web tool that ranks 243 Fujifilm lenses by optical quality across nine photography genres — landscape, portrait, wildlife, and more. Also covers camera comparisons, accessories, and a wiki.",
       "url": "https://wuseria.com"
+    },
+    {
+      "name": "braboj.me/tutorial-git",
+      "tagline": "Concepts before commands — Git for engineers",
+      "description": "A structured Git tutorial in nine chapters that teaches the model before the muscle memory. Includes a 17-recipe playbook and a glossary for fast lookup.",
+      "url": "https://braboj.me/tutorial-git"
+    },
+    {
+      "name": "braboj.me/tutorial-python",
+      "tagline": "Learn Python by Example — 200+ runnable examples",
+      "description": "A practical Python reference for junior, intermediate, and senior developers — over 200 examples covering syntax, idioms, and design patterns. Built to be read by running it.",
+      "url": "https://braboj.me/tutorial-python"
     }
   ],
   "demos": [
