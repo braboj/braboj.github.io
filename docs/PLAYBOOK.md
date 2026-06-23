@@ -128,8 +128,7 @@ All site content lives in `src/data/` as JSON. No component knowledge required.
 | `src/data/about.json`        | Biography story blocks                        |
 | `src/data/experience.json`   | Work experience entries                       |
 | `src/data/skills.json`       | Skill categories and items                    |
-| `src/data/projects.json`     | Project cards                                 |
-| `src/data/tutorials.json`    | Tutorial cards                                |
+| `src/data/projects.json`     | Showroom (real sites) + Demos (repos)         |
 | `src/data/publications.json` | Academic publications                         |
 
 ---

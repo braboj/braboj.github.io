@@ -9,8 +9,8 @@ to making your first change.
 ## 1. What is this project?
 
 This is a personal portfolio site for Branimir Georgiev, deployed at
-https://braboj.github.io. It showcases experience, skills, projects,
-tutorials, and academic publications.
+https://braboj.me. It showcases experience, skills, projects, and
+academic publications.
 
 The site is **static** — it has no backend, no database, and no login.
 Every page is generated at build time and served as plain HTML, CSS, and
