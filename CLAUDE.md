@@ -42,8 +42,7 @@ All editable content lives in `src/data/` as JSON. Never hardcode content that a
 | `src/data/about.json`        | Biography story blocks (heading, years, text) |
 | `src/data/experience.json`   | Work experience entries                       |
 | `src/data/skills.json`       | Skill categories and items                    |
-| `src/data/projects.json`     | Portfolio/demo project cards                  |
-| `src/data/tutorials.json`    | Tutorial repository cards                     |
+| `src/data/projects.json`     | Showroom (real sites) + Demos (repos)         |
 | `src/data/publications.json` | Academic publications                         |
 
 Note: `src/content/` is intentionally avoided — Astro reserves that path for Content Collections.

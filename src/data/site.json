@@ -7,7 +7,6 @@
     { "label": "Experience",   "href": "#experience" },
     { "label": "Skills",       "href": "#skills" },
     { "label": "Showroom",     "href": "#showroom" },
-    { "label": "Tutorials",    "href": "#tutorials" },
     { "label": "Publications", "href": "#publications" },
     { "label": "Get in Touch", "href": "#contact" }
   ],
