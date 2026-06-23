@@ -1,5 +1,17 @@
 [
   {
+    "name": "tutorial-git",
+    "tagline": "Let's learn git",
+    "description": "A beginner-friendly Git tutorial covering the core workflow — commits, branches, merges, and collaboration patterns.",
+    "url": "https://github.com/braboj/tutorial-git"
+  },
+  {
+    "name": "tutorial-python",
+    "tagline": "Source code for \"Learn Python by Example\"",
+    "description": "Companion repository for the Learn Python by Example course — practical examples for engineers picking up Python.",
+    "url": "https://github.com/braboj/tutorial-python"
+  },
+  {
     "name": "tutorial-azure",
     "tagline": "Azure cloud training",
     "description": "A hands-on Azure tutorial covering cloud fundamentals — compute, storage, and deployment for engineers new to the platform.",
@@ -10,12 +22,6 @@
     "tagline": "Docker training program",
     "description": "A structured Docker training program covering containers, images, volumes, and compose — built for engineers moving workloads to containers.",
     "url": "https://github.com/braboj/tutorial-docker"
-  },
-  {
-    "name": "tutorial-git",
-    "tagline": "Let's learn git",
-    "description": "A beginner-friendly Git tutorial covering the core workflow — commits, branches, merges, and collaboration patterns.",
-    "url": "https://github.com/braboj/tutorial-git"
   },
   {
     "name": "tutorial-microprocessor",
@@ -46,12 +52,6 @@
     "tagline": "Into the depths of parallel execution",
     "description": "A deep dive into operating system concepts with a focus on parallel execution — processes, threads, and synchronisation for systems engineers.",
     "url": "https://github.com/braboj/tutorial-os"
-  },
-  {
-    "name": "tutorial-python",
-    "tagline": "Source code for \"Learn Python by Example\"",
-    "description": "Companion repository for the Learn Python by Example course — practical examples for engineers picking up Python.",
-    "url": "https://github.com/braboj/tutorial-python"
   },
   {
     "name": "tutorial-testing",

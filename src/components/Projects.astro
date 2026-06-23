@@ -1,22 +1,39 @@
 ---
 import projects from '../data/projects.json';
+
+const groups = [
+  { id: 'showroom', title: 'Showroom', items: projects.showroom },
+  { id: 'demos', title: 'Demos', items: projects.demos },
+];
 ---
-<section id="projects" class="section">
+<section id="showroom" class="section">
   <div class="container">
-    <h2 class="section-title reveal">Projects</h2>
-    <div class="projects-grid">
-      {projects.map((project) => (
-        <div class="project-card reveal">
-          <div class="project-header">
-            <h3 class="project-name">{project.name}</h3>
-            <p class="project-tagline">{project.tagline}</p>
-          </div>
-          <p class="project-description">{project.description}</p>
-          {project.url && (
-            <a href={project.url} class="project-link" target="_blank" rel="noopener noreferrer">View →</a>
-          )}
+    <h2 class="section-title reveal">Showroom</h2>
+
+    {groups.map((group) => (
+      <div class="projects-group">
+        <h3 class="projects-group-title reveal">{group.title}</h3>
+        <div class="projects-grid">
+          {group.items.map((project) => (
+            <div class="project-card reveal">
+              <div class="project-header">
+                <h4 class="project-name">{project.name}</h4>
+                <p class="project-tagline">{project.tagline}</p>
+              </div>
+              <p class="project-description">{project.description}</p>
+              {project.url && (
+                <a
+                  href={project.url}
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit ${project.name}`}
+                >View →</a>
+              )}
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      </div>
+    ))}
   </div>
 </section>
