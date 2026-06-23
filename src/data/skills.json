@@ -9,11 +9,11 @@
   },
   {
     "category": "Industrial Protocols",
-    "items": ["CAN", "CANopen", "CIP", "DeviceNet", "EtherNet/IP", "HART", "IO-Link", "Profibus", "Profinet", "Modbus", "MQTT", "Sparkplug", "OPC-DA", "OPC-UA", "MOST", "FlexRay", "LoRaWAN", "Zigbee"]
+    "items": ["CAN", "CANopen", "CIP", "DeviceNet", "EtherNet/IP", "HART", "IO-Link", "Profibus", "Profinet", "Modbus", "MQTT", "Sparkplug", "OPC-DA", "OPC-UA", "MOST", "FlexRay", "LoRaWAN", "Zigbee", "REST", "gRPC"]
   },
   {
     "category": "Software & Tools",
-    "items": ["PostgreSQL", "TimescaleDB", "ElasticSearch", "Docker", "Podman", "Azure", "Grafana", "GitLab", "GitHub", "REST", "gRPC", "arc42", "Mermaid", "JIRA"]
+    "items": ["PostgreSQL", "TimescaleDB", "ElasticSearch", "Docker", "Podman", "Azure", "Grafana", "GitLab", "GitHub", "arc42", "Mermaid", "JIRA"]
   },
   {
     "category": "Professional",
