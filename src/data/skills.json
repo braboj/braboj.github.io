@@ -8,7 +8,7 @@
     "items": ["Siemens PLCs", "TIA Portal", "Honeywell", "SCL", "HMI", "PID Tuning", "Advanced Process Control", "ATEX/IECEx"]
   },
   {
-    "category": "Industrial Protocols",
+    "category": "Protocols & Interfaces",
     "items": ["CAN", "CANopen", "CIP", "DeviceNet", "EtherNet/IP", "HART", "IO-Link", "Profibus", "Profinet", "Modbus", "MQTT", "Sparkplug", "OPC-DA", "OPC-UA", "MOST", "FlexRay", "LoRaWAN", "Zigbee", "REST", "gRPC"]
   },
   {
