@@ -35,7 +35,7 @@ src/
 │   ├── about.json          # Biography story blocks
 │   ├── experience.json     # Work experience
 │   ├── skills.json         # Skill categories
-│   ├── projects.json       # Project cards
+│   ├── projects.json       # Showroom (real sites) + Demos (repos)
 │   ├── tutorials.json      # Tutorial cards
 │   └── publications.json   # Academic publications
 ├── layouts/
