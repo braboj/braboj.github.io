@@ -39,7 +39,7 @@ gh pr create --title "feat: description" --body "..."
 ```
 feat:     new feature or content addition
 fix:      bug fix or correction
-chore:    maintenance, releases, tooling
+chore:    maintenance, tooling
 docs:     documentation only
 style:    CSS/formatting, no logic change
 refactor: code change that neither fixes a bug nor adds a feature
@@ -49,21 +49,9 @@ test:     test additions or changes
 ### Release workflow
 
 ```bash
+# No release commits — the annotated tag on main is the release marker
 git checkout main
 git pull
-
-# 1. Create release branch
-git checkout -b chore/release-vA.B.C
-
-# 2. Empty release marker commit
-git commit --allow-empty -m "chore: release vA.B.C"
-
-# 3. Push and open PR
-git push -u origin chore/release-vA.B.C
-gh pr create --title "chore: release vA.B.C" --body "Release vA.B.C"
-
-# 4. After PR is merged, tag main (annotated tags only)
-git checkout main && git pull
 git tag -a vA.B.C -m "Release vA.B.C"
 git push origin vA.B.C
 ```
