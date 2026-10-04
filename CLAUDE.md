@@ -93,14 +93,15 @@ See `README.md` for the full project structure. Key rule: default to
 - **After a PR is merged**, delete both the remote and local branch: `git branch -d <branch>` and `gh api -X DELETE repos/braboj/braboj.github.io/git/refs/heads/<branch>`. Then pull main: `git checkout main && git pull`.
 
 ## Versioning
-- Follows `vA.B.C.D` — A=major, B=minor, C=build, D=hotfix
+- Follows `vA.B.C` — A=major, B=minor, C=patch
 - No VERSION file — git tags only
+- All tags are annotated (`git tag -a`) — never lightweight
 - Release process:
-  1. `git checkout -b chore/release-vA.B.C.D`
-  2. `git commit --allow-empty -m "chore: release vA.B.C.D"`
+  1. `git checkout -b chore/release-vA.B.C`
+  2. `git commit --allow-empty -m "chore: release vA.B.C"`
   3. Push, open PR, merge
   4. `git checkout main && git pull`
-  5. `git tag vA.B.C.D && git push origin vA.B.C.D`
+  5. `git tag -a vA.B.C -m "Release vA.B.C" && git push origin vA.B.C`
 
 ## Quality attributes
 

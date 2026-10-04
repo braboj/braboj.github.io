@@ -53,19 +53,19 @@ git checkout main
 git pull
 
 # 1. Create release branch
-git checkout -b chore/release-vA.B.C.D
+git checkout -b chore/release-vA.B.C
 
 # 2. Empty release marker commit
-git commit --allow-empty -m "chore: release vA.B.C.D"
+git commit --allow-empty -m "chore: release vA.B.C"
 
 # 3. Push and open PR
-git push -u origin chore/release-vA.B.C.D
-gh pr create --title "chore: release vA.B.C.D" --body "Release vA.B.C.D"
+git push -u origin chore/release-vA.B.C
+gh pr create --title "chore: release vA.B.C" --body "Release vA.B.C"
 
-# 4. After PR is merged, tag main
+# 4. After PR is merged, tag main (annotated tags only)
 git checkout main && git pull
-git tag vA.B.C.D
-git push origin vA.B.C.D
+git tag -a vA.B.C -m "Release vA.B.C"
+git push origin vA.B.C
 ```
 
 ### After a PR is merged
@@ -112,7 +112,7 @@ gh pr merge <number>
 ### Releases
 
 ```bash
-gh release create vA.B.C.D --title "vA.B.C.D" --notes "Release notes"
+gh release create vA.B.C --title "vA.B.C" --notes "Release notes"
 gh release list
 ```
 
