@@ -5,12 +5,12 @@
     "period": "2026 – Present",
     "location": "Varna, Bulgaria",
     "description": "Building software tools for engineers at the OT/IT boundary. Responsible end to end: design, implementation, testing, and deployment.",
-    "tags": ["Python", "Protocol SDKs", "DeviceNet", "Modbus", "OPC-UA", "MQTT", "Docker", "FastAPI"]
+    "tags": ["Python", "DeviceNet", "Modbus", "OPC-UA", "MQTT", "Docker", "FastAPI", "Proxmox", "Claude Code"]
   },
   {
     "company": "Heidelberg Materials Digital Hub Varna",
     "role": "Senior Software Engineer",
-    "period": "2025 – 2026",
+    "period": "04/2025 – 10/2026",
     "location": "Varna, Bulgaria",
     "description": "Analyzed the brownfield PxTrend codebase acquired from Paranext and reconstructed its undocumented architecture. Audited the vendor source transfer and documented its gaps. Built OT-to-IT ETL pipelines on PxTrend. Authored the handover knowledge base for PxTrend maintenance.",
     "tags": ["Python", "Flask", "FastAPI", "Azure", "Docker", "GitLab", "ElasticSearch", "pytest", "pydantic", "arc42"]

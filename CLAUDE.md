@@ -5,7 +5,7 @@ Personal portfolio site for Branimir Georgiev — automation engineer, software 
 
 - Owner: Branimir Georgiev
 - GitHub: https://github.com/braboj
-- Contact: braboj@abv.bg
+- Contact: contact@imbra.io
 - LinkedIn: https://linkedin.com/in/branimir-georgiev
 - Live at https://braboj.me (custom domain via `public/CNAME`), deployed to GitHub Pages by GitHub Actions on push to `main`
 
@@ -62,7 +62,6 @@ Note: `src/content/` is intentionally avoided — Astro reserves that path for C
 
 | Service                | Purpose                              | Config                                          |
 |------------------------|--------------------------------------|-------------------------------------------------|
-| Plausible              | Privacy-friendly analytics (no cookies, no consent banner) | Script tag in `src/layouts/Base.astro` |
 | Google Search Console  | Search indexing and crawl monitoring | Verification meta tag in `src/layouts/Base.astro` |
 
 ## Component architecture
@@ -123,9 +122,9 @@ These are the non-negotiable standards for this project:
 - Preload critical above-the-fold assets (hero image)
 - Keep client-side JS minimal — static generation by default
 
-**SEO & analytics**
+**SEO & privacy**
 - `robots.txt`, Open Graph, and Twitter Card meta tags required
-- Privacy-friendly analytics only (Plausible — no cookies, no consent banner needed)
+- No analytics, tracking scripts, or cookies
 
 **Documentation**
 - `CLAUDE.md` and `README.md` must always reflect the actual codebase
