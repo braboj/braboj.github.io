@@ -3,6 +3,6 @@ import react from '@astrojs/react';
 
 export default defineConfig({
   output: 'static',
-  site: 'https://braboj.github.io',
+  site: 'https://braboj.me',
   integrations: [react()],
 });

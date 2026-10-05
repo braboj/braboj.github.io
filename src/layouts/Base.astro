@@ -8,6 +8,8 @@ const {
   title = 'Branimir Georgiev',
   description = 'Automation Engineer. Software Engineer. Founder.'
 } = Astro.props;
+const pageUrl = new URL(Astro.url.pathname, Astro.site);
+const imageUrl = new URL('/images/branimir-2.jpg', Astro.site);
 ---
 <!doctype html>
 <html lang="en">
@@ -23,18 +25,12 @@ const {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://braboj.github.io" />
-    <meta
-      property="og:image"
-      content="https://braboj.github.io/images/branimir-2.jpg"
-    />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:image" content={imageUrl} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta
-      name="twitter:image"
-      content="https://braboj.github.io/images/branimir-2.jpg"
-    />
+    <meta name="twitter:image" content={imageUrl} />
     <link rel="preload" as="image" href="/images/branimir-2.jpg" />
     <!-- Privacy-friendly analytics by Plausible -->
     <script
