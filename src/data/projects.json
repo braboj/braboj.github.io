@@ -1,15 +1,9 @@
 {
   "showroom": [
     {
-      "name": "braboj.me",
-      "tagline": "Personal portfolio and engineering profile",
-      "description": "This site — a minimal portfolio built with Astro, showcasing experience, skills, and projects. Open source and deployed via GitHub Pages.",
-      "url": "https://braboj.me"
-    },
-    {
       "name": "imbra.io",
       "tagline": "Home of industrial software for the OT/IT boundary",
-      "description": "The company site for Imbra — home of Imbra Connect, a suite of industrial protocol SDKs covering DeviceNet, Modbus, OPC-UA, and MQTT.",
+      "description": "The company site for Imbra — software tools for engineers working where plant-floor systems meet IT.",
       "url": "https://imbra.io"
     },
     {
@@ -17,6 +11,12 @@
       "tagline": "Pick the right Fujifilm lens with lab data, not marketing",
       "description": "A lightweight, offline-friendly web tool that ranks 243 Fujifilm lenses by optical quality across nine photography genres — landscape, portrait, wildlife, and more. Also covers camera comparisons, accessories, and a wiki.",
       "url": "https://wuseria.com"
+    },
+    {
+      "name": "solid-ai-templates",
+      "tagline": "Composable CLAUDE.md and AGENTS.md templates for AI coding agents",
+      "description": "Builds agent context files from reusable layers — base, backend/frontend, and stack rules — so every agent on every project follows the same conventions. Codifies 12-factor, OWASP, SOLID, SemVer, and conventional commits.",
+      "url": "https://github.com/solid-ai-dev/solid-ai-templates"
     },
     {
       "name": "braboj.me/tutorial-git",
