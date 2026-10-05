@@ -3,25 +3,34 @@
     "heading": "Walk on fire, breathe ammonia",
     "years": "2009 – 2019",
     "paragraphs": [
-      "Branimir started as an automation engineer at Solvay Sodi, one of Bulgaria's largest chemical plants. Not the kind of job where you sit in front of a screen — the kind where you bail water by hand to keep PLCs alive during a flood, climb 180-metre chimneys in wind, and witness the destructive power of a multi-tonne steam head punch through a metre-thick concrete wall.",
-      "He automated compressors, utilities, and process units on both Honeywell and Siemens hardware, ported Honeywell control blocks to Siemens SCL, and cleaned up after consultants who left systems broken. He learned what industrial software actually costs when it fails. When things went wrong, external companies would say: <em>\"If Branko is here, everything will be all right.\"</em> In technical terms: Branimir had achieved bhai status — the one certification no university awards."
+      "I started as an automation engineer at Solvay Sodi, one of Bulgaria's largest chemical plants. Not the kind of job where you sit in front of a screen — the kind where you bail water by hand to keep PLCs alive during a flood, climb 180-metre chimneys in wind, and witness the destructive power of a multi-tonne steam head punch through a metre-thick concrete wall.",
+      "I automated compressors, utilities, and process units on both Honeywell and Siemens hardware, ported Honeywell control blocks to Siemens SCL, and cleaned up after consultants who left systems broken. I learned what industrial software actually costs when it fails. When things went wrong, external companies would say: <em>\"If Branko is here, everything will be all right.\"</em> In technical terms: I had achieved bhai status — the one certification no university awards. The fine print: some of what I fixed, I had broken first."
     ]
   },
   {
     "heading": "Break it until you make it",
     "years": "2019 – 2025",
     "paragraphs": [
-      "At Hilscher, Branimir moved into software and discovered Python. He hit a gap no existing library could fill: protocol stacks built ONLY for communication, not for testing. You cannot craft malformed packets. You cannot simulate edge cases the spec does not cover.",
-      "That gap is where the work began. An SDK grew to cover DeviceNet, CAN, Modbus, OPC-UA, and MQTT. Brutal deadlines from tier-1 American semiconductor equipment manufacturers. Impossible milestones. All delivered. The model was lean: developer and tester working in parallel, every artifact shipped already tested.",
-      "Branimir had a penchant for crashing things on a Friday afternoon, or right before a public holiday — because that is when developers reveal their true dedication. He trained six engineers and earned the nickname <em>the bastard from heaven</em> in tester mode and <em>master-blaster</em> in developer mode."
+      "At Hilscher, I moved into software and discovered Python. I hit a gap no existing library could fill: protocol stacks built <em>only</em> for communication, not for testing. You cannot craft malformed packets. You cannot simulate edge cases the spec does not cover.",
+      "That gap is where the work began. An SDK grew to cover DeviceNet, CAN, Modbus, OPC-UA, and MQTT. Brutal deadlines from tier-1 American semiconductor equipment manufacturers. Impossible milestones. All delivered. My weekends were not. The model was lean: developer and tester working in parallel, every artifact shipped already tested.",
+      "I had a penchant for crashing things on a Friday afternoon, or right before a public holiday — because that is when developers reveal their true dedication. I trained six engineers. In developer mode they called me <em>master-blaster</em>. The developers whose Friday afternoons I ruined had another name: <em>the bastard from heaven</em>, a fallen angel bringing light to hidden bugs (Isaiah 14:12)."
     ]
   },
   {
     "heading": "The best collaboration is through conversation",
-    "years": "2025 – Present",
+    "years": "2025 – 2026",
     "paragraphs": [
-      "At Heidelberg Materials, Branimir worked on PxTrend — an industrial historian built by Paranext. When the setup stalled, he drove to the nearest plant in Devnya, talked to the operators, learned from the clients, learned from the creator, and built understanding the only way that works — by experimenting, using it, and solving problems. The understanding of what a historian should do became the foundation for what came next.",
-      "A special thanks to Edgar Poth, founder of Paranext, for sharing his knowledge directly — shadowing him from 4am to 11pm through installations, upgrades, and live migrations of PxTrend was worth more than any technical book. It was an eye opening experience with a showcase of real problems on the plant floor."
+      "At Heidelberg Materials, I worked on PxTrend — an industrial historian built by Paranext. When the setup stalled, I drove to the nearest plant in Devnya, talked to the operators, the clients, and the creator, and built understanding the only way that works — by experimenting, using it, and solving problems. Knowing what a historian should do, not just what it does, became the foundation for what came next.",
+      "Special thanks to Edgar Poth, founder of Paranext, for sharing his knowledge directly. Shadowing him from 4am to 11pm through installations, upgrades, and live migrations of PxTrend was an eye-opening tour of the real problems on the plant floor — worth more than any technical book, and considerably harder on the coffee supply."
+    ]
+  },
+  {
+    "heading": "When the Prophet goes to the mountain",
+    "years": "2026 – Present",
+    "paragraphs": [
+      "As the old proverb goes — if the mountain won't come to you, go to the mountain. Six corporate transformations taught me a lot about change management — mostly that change is easier to manage when you're the one making it.",
+      "Being a founder was always the dream, just not the startup kind. No investors, no hockey-stick growth, no exit strategy: Imbra is bootstrapped, slow and steady, built to last rather than to flip. My daughter is the reason it happened now. She made me want to be a better version of myself — technically, personally, and, as my doctor keeps reminding me, physically. Being awake at 3am anyway helped with the timing.",
+      "Imbra is where I learn, help, and give back: tools that let people prototype and build at low cost and high quality, and bring back the fun of engineering and experimenting. Along the way I want to meet new people, young engineers and seasoned professionals alike, and build something I can keep doing at my own pace for years to come. Every product comes from 15 years of knowing firsthand what it costs when software fails — and the people who have to live with the consequences. <blockquote class=\"statement\">\"The complexity is ours to solve.\"</blockquote>"
     ]
   }
 ]
