@@ -7,21 +7,19 @@ Personal portfolio site for Branimir Georgiev — automation engineer, software 
 - GitHub: https://github.com/braboj
 - Contact: braboj@abv.bg
 - LinkedIn: https://linkedin.com/in/branimir-georgiev
-- Deployed to GitHub Pages at https://braboj.github.io via GitHub Actions on push to `main`
+- Live at https://braboj.me (custom domain via `public/CNAME`), deployed to GitHub Pages by GitHub Actions on push to `main`
 
 ## Stack
 - Astro (static site generator, output: static / GitHub Pages)
 - TypeScript for interactive React island components
 - Plain CSS in `src/styles/global.css` (no Tailwind, no CSS-in-JS)
 - Content driven by JSON files in `src/data/`
-- Deployed via GitHub Actions on push to `main`
 
 ## Design
 - Aesthetic: clean, minimal, technical
 - Background: `#FFFFFF` and `#F8F9FA` alternating sections
 - Accent: steel blue `#1B4F8A`
 - Typography: IBM Plex Sans (300, 400, 500, 600) + IBM Plex Mono (400, 500) loaded from Google Fonts
-- All CSS lives in `src/styles/global.css` — do not use inline styles except for dynamic/computed values
 - Responsive breakpoints:
   - Tablet: max-width 1024px
   - Mobile: max-width 768px (hamburger menu replaces nav links)
@@ -35,7 +33,6 @@ Personal portfolio site for Branimir Georgiev — automation engineer, software 
 - No emojis in content, code, or documentation unless explicitly requested
 
 ## Content
-All editable content lives in `src/data/` as JSON. Never hardcode content that a non-developer might want to change.
 
 | File                         | Controls                                      |
 |------------------------------|-----------------------------------------------|
@@ -43,7 +40,7 @@ All editable content lives in `src/data/` as JSON. Never hardcode content that a
 | `src/data/about.json`        | Biography story blocks (heading, years, text) |
 | `src/data/experience.json`   | Work experience entries                       |
 | `src/data/skills.json`       | Skill categories and items                    |
-| `src/data/projects.json`     | Showroom (real sites) + Demos (repos)         |
+| `src/data/projects.json`     | Showroom (live projects) + Demos (demo repos) |
 | `src/data/publications.json` | Academic publications                         |
 
 Note: `src/content/` is intentionally avoided — Astro reserves that path for Content Collections.
@@ -70,8 +67,7 @@ Note: `src/content/` is intentionally avoided — Astro reserves that path for C
 
 ## Component architecture
 
-See `README.md` for the full project structure. Key rule: default to
-`.astro`. Only reach for React (`.tsx`) when client-side state is required.
+See `README.md` for the full project structure.
 
 ## Reveal animations
 `.reveal` → `.reveal.visible` transition handled by a single `IntersectionObserver` script in `src/layouts/Base.astro`. Do not add per-component reveal scripts.
@@ -85,13 +81,13 @@ See `README.md` for the full project structure. Key rule: default to
 - Commit messages must use conventional commit prefixes:
   `feat:`, `fix:`, `chore:`, `docs:`, `refactor:`, `style:`, `test:`
 - Always work on a branch — never commit directly to `main`
-- Exception: documentation-only changes (`docs/`, `README.md`, `CLAUDE.md`) may go directly to `main`
+- Exception: documentation-only changes (`docs/`, `README.md`, `CLAUDE.md`) may go directly to `main` (the branch ruleset requires PRs; this relies on the owner's admin bypass)
 - Branch naming: `feat/description`, `fix/description`, `chore/description`, `docs/description`
 - PRs should be small and focused — one concern per PR
 - Always test with `npm run dev` before committing
 - Do not commit `dist/` or `node_modules/`
 - **Before pushing or creating a PR**, always check the current branch and open PR status with `git status` and `gh pr list`. If the previous PR is closed or merged, create a new branch rather than pushing to a stale one.
-- **After a PR is merged**, delete both the remote and local branch: `git branch -d <branch>` and `gh api -X DELETE repos/braboj/braboj.github.io/git/refs/heads/<branch>`. Then pull main: `git checkout main && git pull`.
+- **After a PR is merged**, delete both the remote and local branch: `git branch -D <branch>` (squash merges need `-D`) and `gh api -X DELETE repos/braboj/braboj.github.io/git/refs/heads/<branch>`. Then pull main: `git checkout main && git pull`.
 
 ## Versioning
 - Follows `vA.B.C` — A=major, B=minor, C=patch
@@ -139,10 +135,14 @@ These are the non-negotiable standards for this project:
 - No references to non-existent files, components, or services
 
 ## Commands
-```
-npm run dev      # develop — hot reload at localhost:4321
-npm run build    # compile — production build to dist/
-npm run preview  # verify — preview the production build locally
+Requires Node 22 (matches `.github/workflows/deploy.yml`).
+
+```bash
+npm install            # once, or after dependency changes
+npm run dev            # develop — hot reload at localhost:4321
+npm run build          # compile — production build to dist/
+npm run preview        # verify — preview the production build locally
+gh run list --limit 1  # check the GitHub Pages deploy after a merge
 ```
 
 ## Documentation rule
