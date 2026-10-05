@@ -30,7 +30,8 @@ Personal portfolio site for Branimir Georgiev — automation engineer, software 
 ## Brand voice
 - Tagline: "Code with Branko"
 - Tone: direct, practical, no fluff — written for engineers, not marketers
-- Use "Branimir" or "Branko" in body copy — not "braboj"
+- Refer to the owner as "Branimir" or "Branko" — never "braboj"
+- The About section is written in the first person ("I")
 - No emojis in content, code, or documentation unless explicitly requested
 
 ## Content
