@@ -63,6 +63,7 @@ Note: `src/content/` is intentionally avoided — Astro reserves that path for C
 | Service                | Purpose                              | Config                                          |
 |------------------------|--------------------------------------|-------------------------------------------------|
 | Google Search Console  | Search indexing and crawl monitoring | Verification meta tag in `src/layouts/Base.astro` |
+| Umami (self-hosted)    | Cookieless page-view analytics       | `stats.imbra.io` script tag in `src/layouts/Base.astro`, website ID `3858a749-5132-4c6a-9a57-2946033e2c1f`, `data-domains="braboj.me"` |
 
 ## Component architecture
 
@@ -124,7 +125,9 @@ These are the non-negotiable standards for this project:
 
 **SEO & privacy**
 - `robots.txt`, Open Graph, and Twitter Card meta tags required
-- No analytics, tracking scripts, or cookies
+- Analytics only via self-hosted Umami (`stats.imbra.io`); no other tracking
+  scripts, no cookies
+- `src/pages/privacy.astro` must describe exactly what is collected
 
 **Documentation**
 - `CLAUDE.md` and `README.md` must always reflect the actual codebase
